@@ -24,5 +24,23 @@ namespace Student_Assistent
         {
             InitializeComponent();
         }
+        private void WindowMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+
+        }
+        private void Enter(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Quit(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+        private void Registration(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
     }
 }

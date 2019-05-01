@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Student_Assistent"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStyle="None" ResizeMode="NoResize" MouseLeftButtonDown="WindowMouseLeftButtonDown"
+        Title="MainWindow" Height="330" Width="600">
 
     <Grid>
-
+        <Image Source="D:\учеба\4 sem\Student_Assistent\Img\2.1.jpg" Width="600px" Height="400px" />
+        <TextBlock Margin="189,94,188,208.6" FontFamily="Bell MT" FontSize="30" Foreground="#FF181583">Student Assistent</TextBlock>
+        <Button Style="{StaticResource MyButtonStyle}" Margin="214,139,231,150.6" Content="Enter" Click="Enter" FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46"/>
+        <Button Style="{StaticResource MyButtonStyle}" Margin="214,184,231,105.6" Content="Rigistration" Click="Registration" FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46"/>
+        <Button Style="{StaticResource MyButtonStyle}" Margin="214,229,231,60.6" Content="Quit" Click="Quit" FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46"/>
     </Grid>
 </Window>
