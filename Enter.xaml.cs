@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Student_Assistent
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Enter.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Enter : Window
     {
-        public MainWindow()
+        public Enter()
         {
             InitializeComponent();
         }
@@ -32,20 +31,14 @@ namespace Student_Assistent
         {
             this.Close();
         }
-        private void Enter(object sender, RoutedEventArgs e)
-        {
-            Enter enter = new Enter();
-            enter.Show();
-            this.Close();
-        }
         private void Svern(object sender, RoutedEventArgs e)
         {
             SystemCommands.MinimizeWindow(this);
         }
-        private void Registration(object sender, RoutedEventArgs e)
-        {
-            
-        }
 
+        private void CheckUser(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
