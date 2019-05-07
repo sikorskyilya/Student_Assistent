@@ -9,22 +9,23 @@
         Height="330" Width="600">
     <Grid>
         <Image Source="Resources\2.1.jpg" Width="600px" Margin="0,-15,0,-16.4" />
-        <TextBlock TextWrapping="Wrap" Text="Login:" Margin="104,80,117,170" FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46"/>
+        <TextBlock TextWrapping="Wrap" Text="Login:" Margin="104,80,117,225.6" FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46"/>
         <Border BorderThickness="3" BorderBrush="#FF3E4BD4" CornerRadius="10" Margin="104,104,117,194.6" Height="31px">
             <TextBox Name="Login_text" TextWrapping="Wrap" FontSize="20" FontFamily="Bell MT" Foreground="#FF0C0A46" Background="Transparent"
                      FontStyle="Italic" MaxLines="20" MaxLength="20" BorderThickness="0"/>
         </Border>
-        <TextBlock TextWrapping="Wrap" Text="Password:" Margin="104,140,117,161.6" FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46"/>
+        <TextBlock TextWrapping="Wrap" Text="Password:" Margin="104,140,117,164.6" FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46"/>
         <Border BorderThickness="3" BorderBrush="#FF3E4BD4" CornerRadius="10" Margin="104,165,117,134.6" Height="31px">
             <PasswordBox Name="Password_text" FontSize="20" FontFamily="Bell MT" Foreground="#FF0C0A46" Background="Transparent"
                      FontStyle="Italic" MaxLength="20" BorderThickness="0"/>
         </Border>
-        <Button Style="{StaticResource MyButtonStyle}" Margin="222,215,223,74.6" Content="Enter"  FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46" Click="CheckUser"/>
+        <Button Style="{StaticResource MyButtonStyle}" Margin="222,239,223,50.6" Content="Enter"  FontFamily="Bell MT" FontSize="20" Foreground="#FF0C0A46" Click="CheckUser"/>
         <Button Style="{StaticResource ButtonStyle2}" HorizontalAlignment="Left" Margin="552,19,0,0" VerticalAlignment="Top" Click="Quit" Height="16">
             <TextBlock TextWrapping="Wrap" Text="X" FontFamily="Bell MT" Foreground="#FF0C0A46" Width="10" Height="12"/>
         </Button>
         <Button Style="{StaticResource ButtonStyle2}" HorizontalAlignment="Left" Margin="534,19,0,0" VerticalAlignment="Top" Click="Svern" Height="16">
             <TextBlock TextWrapping="Wrap" Text="_" FontFamily="Bell MT" Foreground="#FF0C0A46" Width="10" Height="12"/>
         </Button>
+        <TextBlock Name="Uncorrect" HorizontalAlignment="Left" Margin="104,201,0,0" TextWrapping="Wrap" Text="Неверный логин или пароль" VerticalAlignment="Top" Width="379" FontFamily="Bell MT" FontSize="22" Foreground="#FF9C2828" Visibility="Collapsed"/>
     </Grid>
 </Window>

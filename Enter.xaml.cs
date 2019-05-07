@@ -17,8 +17,10 @@ namespace Student_Assistent
     /// <summary>
     /// Логика взаимодействия для Enter.xaml
     /// </summary>
+    /// 
     public partial class Enter : Window
     {
+        public string UserId;
         public Enter()
         {
             InitializeComponent();
@@ -36,9 +38,19 @@ namespace Student_Assistent
             SystemCommands.MinimizeWindow(this);
         }
 
-        private void CheckUser(object sender, RoutedEventArgs e)
+        public void CheckUser(object sender, RoutedEventArgs e)
         {
-
+            UserId = DBAccess.CheckUser(this.Login_text.Text, this.Password_text.Password);
+            if ( UserId == null || UserId == "No")
+            {
+                Uncorrect.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                Menu menu = new Menu(UserId.ToString());
+                menu.Show();
+                this.Close();
+            }
         }
     }
 }

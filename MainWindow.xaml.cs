@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Student_Assistent
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -42,9 +39,11 @@ namespace Student_Assistent
         {
             SystemCommands.MinimizeWindow(this);
         }
-        private void Registration(object sender, RoutedEventArgs e)
+        private void _Registration(object sender, RoutedEventArgs e)
         {
-            
+            Registration registration = new Registration();
+            registration.Show();
+            this.Close();
         }
 
     }
