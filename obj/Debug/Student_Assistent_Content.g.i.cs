@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/2.1.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("knobshuffleoff.ico")]
 
 

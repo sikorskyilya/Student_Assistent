@@ -47,3 +47,5 @@ D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\App.baml
 D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\Resources\Styles.baml
 D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\Registration.g.cs
 D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\Registration.baml
+D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\TexTEditor\TextEd.g.cs
+D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\TexTEditor\TextEd.baml

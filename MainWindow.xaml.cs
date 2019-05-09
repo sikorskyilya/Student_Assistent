@@ -45,6 +45,5 @@ namespace Student_Assistent
             registration.Show();
             this.Close();
         }
-
     }
 }

@@ -15,6 +15,26 @@
         <Button Style="{StaticResource ButtonStyle2}" HorizontalAlignment="Left" Margin="534,19,0,0" VerticalAlignment="Top" Click="Svern" Height="16">
             <TextBlock TextWrapping="Wrap" Text="_" FontFamily="Bell MT" Foreground="#FF0C0A46" Width="10" Height="12"/>
         </Button>
-        <TextBlock Name="Useriii" HorizontalAlignment="Left" Margin="150,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock Name="Useriii" HorizontalAlignment="Left" Margin="98,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <Button Style="{StaticResource ButtonMenu}" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="30" Content="Заметки" HorizontalAlignment="Left" Margin="82,54,0,0" VerticalAlignment="Top"  Width="179" Height="112" Click="TextEditor">
+            <Button.Background>
+                <SolidColorBrush Color="Azure" Opacity="0.4" />
+            </Button.Background>
+        </Button>
+        <Button Style="{StaticResource ButtonMenu}" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="30" Content="Прогресс&#xa; по учебе" HorizontalAlignment="Left" Margin="322,54,0,0" VerticalAlignment="Top" Width="179" Height="112">
+            <Button.Background>
+                <SolidColorBrush Color="Azure" Opacity="0.4" />
+            </Button.Background>
+        </Button>
+        <Button Style="{StaticResource ButtonMenu}" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="30" Content="Расписание" HorizontalAlignment="Left" Margin="82,192,0,0" VerticalAlignment="Top" Width="179" Height="112">
+            <Button.Background>
+                <SolidColorBrush Color="Azure" Opacity="0.4" />
+            </Button.Background>
+        </Button>
+        <Button Style="{StaticResource ButtonMenu}" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="30" Content="Зачетка" HorizontalAlignment="Left" Margin="322,192,0,0" VerticalAlignment="Top" Width="179" Height="112">
+            <Button.Background>
+                <SolidColorBrush Color="Azure" Opacity="0.4" />
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

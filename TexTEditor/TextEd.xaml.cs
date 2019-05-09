@@ -12,19 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Student_Assistent
+namespace Student_Assistent.TexTEditor
 {
     /// <summary>
-    /// Логика взаимодействия для Menu.xaml
+    /// Логика взаимодействия для TextEd.xaml
     /// </summary>
-    public partial class Menu : Window
+    public partial class TextEd : Window
     {
-        string UserId;
-        public Menu(string User)
+        string _UserID;
+        public TextEd(string UserId)
         {
-            UserId = User;
+            _UserID = UserId;
             InitializeComponent();
-            Useriii.Text = UserId;
+            UserTextBox.Text = Text.UserText(UserId).ToString();
         }
         private void WindowMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -32,16 +32,12 @@ namespace Student_Assistent
         }
         private void Quit(object sender, RoutedEventArgs e)
         {
+            TexTEditor.Text.SaveText(_UserID, UserTextBox.Text);
             this.Close();
         }
         private void Svern(object sender, RoutedEventArgs e)
         {
             SystemCommands.MinimizeWindow(this);
-        }
-        private void TextEditor(object sender, RoutedEventArgs e)
-        {
-            TexTEditor.TextEd textEd = new TexTEditor.TextEd(UserId);
-            textEd.Show();
         }
     }
 }
