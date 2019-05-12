@@ -5,16 +5,90 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Student_Assistent.TexTEditor"
         mc:Ignorable="d"
-        Title="TextEd" Height="330" Width="350"
+        Title="TextEd" Height="330" Width="352.4"
         WindowStyle="None" ResizeMode="NoResize" MouseLeftButtonDown="WindowMouseLeftButtonDown">
-    <Grid Background="#FFBABFD7">
+    <Grid Background="#FF919BC7" Margin="0,0,0,-0.4">
         <Button Style="{StaticResource ButtonStyle2}" HorizontalAlignment="Left" Margin="323,7,0,0" VerticalAlignment="Top" Click="Quit" Height="16">
             <TextBlock TextWrapping="Wrap" Text="X" FontFamily="Bell MT" Foreground="#FF0C0A46" Width="10" Height="12"/>
         </Button>
         <Button Style="{StaticResource ButtonStyle2}" HorizontalAlignment="Left" Margin="305,7,0,0" VerticalAlignment="Top" Click="Svern" Height="16">
             <TextBlock TextWrapping="Wrap" Text="_" FontFamily="Bell MT" Foreground="#FF0C0A46" Width="10" Height="12"/>
         </Button>
-        <TextBox  Name="UserTextBox" Background="#FF52C390" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="20" Width="350" Margin="0,28,0.4,-0.4"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,7,0,0" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="20" TextWrapping="Wrap" Text="Заметки" VerticalAlignment="Top"/>
+        <TabControl x:Name="products" Margin="0,0,45.4,-0.4">
+
+            <TabItem x:Name="w" Margin="1,0,-5.4,-1.4">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FF6CC89F" Offset="0"/>
+                        <GradientStop Color="#FF6CC890" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Не забыть!</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBox  x:Name="UserTextVarning" Background="#FF6CC89F" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="20" Height="295" Margin="0,0,0.4,0" />
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="q">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FF545DBA" Offset="0"/>
+                        <GradientStop Color="#FF545DBC" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">КП</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBox  x:Name="UserTextKP" Background="#FF545DBC" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="20" Height="295" Margin="0,0,-0.2,0"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="e">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0FD" Offset="0"/>
+                        <GradientStop Color="#FFA8DC6F" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Лабораторные</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBox  x:Name="UserTextLab" Background="#FFA8DC6F" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="20" Height="295" Margin="0,0,-0.2,0"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="r">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0CD" Offset="0"/>
+                        <GradientStop Color="#FF61CFD1" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Прочее</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBox  x:Name="UserTextAny" Background="#FF61CFD1" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="20" Height="295" Margin="0,0,-0.2,0"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+        <TextBlock TextAlignment="Center" FontSize="30" FontFamily="Bell MT" TextWrapping="Wrap" Margin="312,28,21,10" Foreground="#FF2B218E">Stud Asist</TextBlock>
     </Grid>
 </Window>

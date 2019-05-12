@@ -43,5 +43,10 @@ namespace Student_Assistent
             TexTEditor.TextEd textEd = new TexTEditor.TextEd(UserId);
             textEd.Show();
         }
+        private void Rasp(object sender, RoutedEventArgs e)
+        {
+            RaspView.Rasp rasp = new RaspView.Rasp();
+            rasp.Show();
+        }
     }
 }

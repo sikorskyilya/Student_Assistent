@@ -24,7 +24,10 @@ namespace Student_Assistent.TexTEditor
         {
             _UserID = UserId;
             InitializeComponent();
-            UserTextBox.Text = Text.UserText(UserId).ToString();
+            UserTextVarning.Text = TexTEditor.Text.UserText(UserId, 1);
+            UserTextKP.Text = TexTEditor.Text.UserText(UserId, 2);
+            UserTextLab.Text = TexTEditor.Text.UserText(UserId, 3);
+            UserTextAny.Text =  TexTEditor.Text.UserText(UserId, 4);
         }
         private void WindowMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -32,7 +35,7 @@ namespace Student_Assistent.TexTEditor
         }
         private void Quit(object sender, RoutedEventArgs e)
         {
-            TexTEditor.Text.SaveText(_UserID, UserTextBox.Text);
+            TexTEditor.Text.SaveText(_UserID, UserTextVarning.Text, UserTextKP.Text, UserTextLab.Text, UserTextAny.Text);
             this.Close();
         }
         private void Svern(object sender, RoutedEventArgs e)

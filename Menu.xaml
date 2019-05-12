@@ -26,7 +26,7 @@
                 <SolidColorBrush Color="Azure" Opacity="0.4" />
             </Button.Background>
         </Button>
-        <Button Style="{StaticResource ButtonMenu}" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="30" Content="Расписание" HorizontalAlignment="Left" Margin="82,192,0,0" VerticalAlignment="Top" Width="179" Height="112">
+        <Button Click="Rasp" Style="{StaticResource ButtonMenu}" FontFamily="Bell MT" Foreground="#FF0C0A46" FontSize="30" Content="Расписание" HorizontalAlignment="Left" Margin="82,192,0,0" VerticalAlignment="Top" Width="179" Height="112">
             <Button.Background>
                 <SolidColorBrush Color="Azure" Opacity="0.4" />
             </Button.Background>
