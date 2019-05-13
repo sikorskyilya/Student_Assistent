@@ -51,3 +51,9 @@ D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\TexTEditor\TextEd.g.cs
 D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\TexTEditor\TextEd.baml
 D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\RaspView\Rasp.g.cs
 D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\RaspView\Rasp.baml
+D:\учеба\4 sem\OOP\Student_Assistent\bin\Debug\MaterialDesignColors.dll
+D:\учеба\4 sem\OOP\Student_Assistent\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\учеба\4 sem\OOP\Student_Assistent\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\учеба\4 sem\OOP\Student_Assistent\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\AddRasp.g.cs
+D:\учеба\4 sem\OOP\Student_Assistent\obj\Debug\AddRasp.baml

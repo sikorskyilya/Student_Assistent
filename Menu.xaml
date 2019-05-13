@@ -36,5 +36,10 @@
                 <SolidColorBrush Color="Azure" Opacity="0.4" />
             </Button.Background>
         </Button>
+        <Button Style="{StaticResource AddButton}"  Content="+" FontFamily="Bell MT" FontSize="30" HorizontalAlignment="Left" Margin="261,192,0,0" VerticalAlignment="Top" Width="32" Height="112" Click="AddRasp">
+            <Button.Background>
+                <SolidColorBrush Color="Azure" Opacity="0.4" />
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

@@ -48,5 +48,10 @@ namespace Student_Assistent
             RaspView.Rasp rasp = new RaspView.Rasp();
             rasp.Show();
         }
+        private void AddRasp(object sender, RoutedEventArgs e)
+        {
+            AddRasp addRasp = new AddRasp();
+            addRasp.Show();
+        }
     }
 }
