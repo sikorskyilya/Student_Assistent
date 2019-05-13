@@ -89,6 +89,6 @@
                 </TabItem.Content>
             </TabItem>
         </TabControl>
-        <TextBlock TextAlignment="Center" FontSize="30" FontFamily="Bell MT" TextWrapping="Wrap" Margin="312,28,21,10" Foreground="#FF2B218E">Stud Asist</TextBlock>
+        <TextBlock TextAlignment="Center" FontSize="30" FontFamily="Bell MT" TextWrapping="Wrap" Margin="322,28,11,10" Foreground="#FF2B218E">Stud Asist</TextBlock>
     </Grid>
 </Window>

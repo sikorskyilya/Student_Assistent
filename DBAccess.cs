@@ -12,6 +12,7 @@ namespace Student_Assistent
     {
         private const string DB_CONNECTION_NAME = "DefaultDB";
         public static string LoadConnectionString(string id = DB_CONNECTION_NAME) => ConfigurationManager.ConnectionStrings[id].ConnectionString;
+        public static string User1;
         public static string CheckUser(string username, string password)
         {
             using (SQLiteConnection connection = new SQLiteConnection(LoadConnectionString()))
@@ -19,12 +20,17 @@ namespace Student_Assistent
                 var output = connection.Query<User>($"SELECT Id FROM UserAcc WHERE UserName = '{username}' AND UserPass = '{password}';");
                 if (output.Count() == 1)
                 {
+                    User1 = output.ElementAt(0).Id.ToString();
                     return output.ElementAt(0).Id.ToString();
                 }
                 else
                     return "No";
             }
             
+        }
+        public static string User()
+        {
+            return User1;
         }
         public static string RegistUser(string login, string password)
         {

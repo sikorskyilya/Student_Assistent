@@ -49,7 +49,7 @@ namespace Student_Assistent.RaspVievModel
         {
             bool result = true;
             DataRasp.DataRas dataRas = obj as DataRasp.DataRas;
-            if(!string.IsNullOrWhiteSpace(FilterRasp) && !dataRas.Place.Contains(FilterRasp) && dataRas != null && !dataRas.Teacher.Contains(FilterRasp) && !dataRas.Time.Contains(FilterRasp) && !dataRas.Subject.Contains(FilterRasp) && !dataRas.Type.Contains(FilterRasp))
+            if(!string.IsNullOrWhiteSpace(FilterRasp) && !dataRas.Place.Contains(FilterRasp) && dataRas != null && !dataRas.Day.Contains(FilterRasp) && !dataRas.Teacher.Contains(FilterRasp) && !dataRas.Time.Contains(FilterRasp) && !dataRas.Subject.Contains(FilterRasp) && !dataRas.Type.Contains(FilterRasp))
             {
                 return false;
             }

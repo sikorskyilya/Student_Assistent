@@ -17,6 +17,7 @@
         </StackPanel>
         <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding Items}" AutoGenerateColumns="False">
             <DataGrid.Columns>
+                <DataGridTextColumn Header="День" Binding="{Binding Day}" />
                 <DataGridTextColumn Header="Время" Binding="{Binding Time}" />
                 <DataGridTextColumn Header="Аудитория" Binding="{Binding Place}" />
                 <DataGridTextColumn Header="Предмет" Binding="{Binding Subject}" />
